@@ -1,0 +1,164 @@
+@import "./designSystem.scss";
+
+body {
+  background-color: $whiteish;
+}
+
+.background-img {
+  // applies to all breakpoints
+  position: absolute;
+  // mix-blend-mode: normal;
+  background-size: cover;
+
+  // mobile settings first
+  background-repeat: no-repeat;
+  background-image: url("./assets/bg-main-mobile.png");
+  left: 159px;
+  top: -104px;
+  height: 480px;
+  width: 281.4px;
+
+  @include tablet-breakpoint {
+    background-image: url("./assets/bg-main-tablet.png");
+    left: -254px;
+    top: -122px;
+    height: 808px;
+    width: 983px;
+  }
+
+  @include desktop-breakpoint {
+    background-image: url("./assets/bg-main-desktop.png");
+    left: -146px;
+    top: -122px;
+    height: 1758px;
+    width: 1613px;
+  }
+}
+
+.background-pattern-1 {
+  // all breakpoints
+  position: absolute;
+
+  @include tablet-breakpoint {
+    background-image: url("./assets/bg-pattern-1.svg");
+    height: 400px;
+    width: 266.67px;
+    left: 537px;
+    top: -32px;
+  }
+
+  @include desktop-breakpoint {
+    background-image: url("./assets/bg-pattern-1.svg");
+    height: 468px;
+    width: 312px;
+    left: 1128px;
+    top: -40px;
+  }
+}
+
+.logo {
+  // all breakpoints
+  fill: $blackish;
+  height: 32px;
+  width: 146.09px;
+  position: absolute;
+
+  // mobile
+  left: 24.1758px;
+  top: 39.99px;
+
+  @include tablet-breakpoint {
+    left: 39.15px;
+    top: 61.99px;
+  }
+
+  @include desktop-breakpoint {
+    left: 166.15px;
+    top: 61.99px;
+  }
+}
+
+.heading-1 {
+  // all
+  position: absolute;
+
+  // mobile
+  font-size: 40px;
+  line-height: 48px;
+  width: 327px;
+  height: 144px;
+  left: 24px;
+  top: 136px;
+
+  @include tablet-breakpoint {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.727273px;
+    width: 520px;
+    height: 192px;
+    left: 39px;
+    top: 189px;
+  }
+
+  @include desktop-breakpoint {
+    width: 1015px;
+    height: 176px;
+    left: 165px;
+    top: 221px;
+  }
+}
+
+.copy-1 {
+  // all
+  position: absolute;
+
+  // modbile
+  width: 327px;
+  height: 156px;
+  left: 24px;
+  top: 300px;
+  font-size: 16px;
+  line-height: 26px;
+
+  @include tablet-breakpoint {
+    width: 514px;
+    height: 112px;
+    left: 39px;
+    top: 409px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @include desktop-breakpoint {
+    width: 825px;
+    height: 102px;
+    left: 164.5px;
+    top: 437px;
+  }
+}
+
+.middle-box {
+  // all
+  position: absolute;
+  background-color: $blackish;
+
+  // modbile
+  height: 600px;
+  width: 375px;
+  left: 0px;
+  top: 622px;
+
+  @include tablet-breakpoint {
+    height: 600px;
+    width: 696px;
+    left: 33px;
+    top: 770px;
+  }
+
+  @include desktop-breakpoint {
+    height: 600px;
+    width: 1110px;
+    left: 165px;
+    top: 860px;
+  }
+}

@@ -1,0 +1,76 @@
+// clear broswer defaults
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// breakpoints
+// NB: no mobile breakpoint because that's the default
+@mixin tablet-breakpoint {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+@mixin desktop-breakpoint {
+  @media only screen and (min-width: 801px) {
+    @content;
+  }
+}
+
+// colors
+$blueish: #66e2dc;
+$orangish: #fa7453;
+$yellowish: #ffb964;
+$whiteish: #fcfaf9;
+$blackish: #191826;
+
+// typography
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 88px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+}
+
+.body-1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.body-2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+// buttons
+.ios-button {
+  background: $blackish;
+  color: $whiteish;
+
+  &:hover {
+    background: $blueish;
+  }
+}
+
+.android-button {
+  background: $whiteish;
+  color: $blackish;
+
+  &:hover {
+    background: $orangish;
+  }
+}
