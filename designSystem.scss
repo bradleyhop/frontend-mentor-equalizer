@@ -1,3 +1,8 @@
+/*
+  * styles and typography from the design system document given;
+  * also including browser default clearing, device breakpoints
+  */
+
 // clear broswer defaults
 *,
 *::before,
@@ -5,7 +10,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 // breakpoints
@@ -22,41 +26,93 @@
 }
 
 // colors
-$blueish: #66e2dc;
-$orangish: #fa7453;
-$yellowish: #ffb964;
-$whiteish: #fcfaf9;
-$blackish: #191826;
+$blueish: hsl(177, 68%, 64%);
+$orangish: hsl(12, 94%, 65%);
+$yellowish: hsl(33, 100%, 70%);
+$whiteish: hsl(20, 33%, 98%);
+$blackish: hsl(244, 23%, 12%);
 
 // typography
-h1 {
+body {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 88px;
+  font-size: 16px;
+  background-color: $whiteish;
+}
+
+h1 {
   font-weight: bold;
-  line-height: 88px;
-  letter-spacing: -1px;
+  color: $blackish;
+  // mobile
+  font-size: 40px;
+  line-height: 28px;
+  letter-spacing: -0.45px;
+
+  @include tablet-breakpoint {
+  }
+
+  @include desktop-breakpoint {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+  }
 }
 
 h2 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 40px;
   font-weight: bold;
-  line-height: 52px;
+  color: $whiteish;
+  // mobile
+  font-size: 32px;
+  line-height: 40px;
+
+  @include desktop-breakpoint {
+    font-size: 40px;
+    line-height: 52px;
+  }
 }
 
 .body-1 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 26px;
+
+  @include tablet-breakpoint {
+  }
+
+  @include desktop-breakpoint {
+    font-size: 20px;
+    line-height: 34px;
+  }
 }
 
 .body-2 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+  color: $whiteish;
+  // mobile
+  font-size: 18px;
+  line-height: 28px;
+
+  @include desktop-breakpoint {
+    line-height: 26px;
+  }
 }
 
 // buttons
+// attributes of all buttons
+.button-skel {
+  width: 296px;
+  height: 61px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  border-radius: 12px;
+  // TODO: center icon image and text center both horizontally and vertidally
+
+  // tablet and mobile use same size buttons; bigger for desktop
+  @include desktop-breakpoint {
+    width: 333px;
+  }
+}
+
 .ios-button {
   background: $blackish;
   color: $whiteish;
