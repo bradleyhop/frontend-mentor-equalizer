@@ -18,7 +18,7 @@ h1 {
   font-weight: bold;
   color: #191826;
   font-size: 40px;
-  line-height: 28px;
+  line-height: 48px;
   letter-spacing: -0.45px; }
   @media only screen and (min-width: 801px) {
     h1 {
@@ -80,9 +80,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("./assets/bg-main-mobile.png");
   background-attachment: fixed;
-  background-position: 30% 30%;
-  height: 780px;
-  width: 582px;
+  background-position: 0 -280px;
   /*
  *   @include tablet-breakpoint {
  *     background-image: url("./assets/bg-main-tablet.png");
@@ -102,7 +100,6 @@ body {
  */ }
 
 .background-pattern-1 {
-  position: absolute;
   /*
  *   @include tablet-breakpoint {
  *     background-image: url("./assets/bg-pattern-1.svg");
@@ -138,21 +135,15 @@ body {
  */ }
 
 .heading-matter {
+  width: calc(100% - 2rem);
+  height: 320px;
   margin: 0 1rem 6rem 1rem; }
 
-/*
- * .heading-1 {
- *   // all
- *   position: absolute;
- *
- *   // mobile
- *   font-size: 40px;
- *   line-height: 48px;
- *   width: 327px;
- *   height: 144px;
- *   left: 24px;
- *   top: 136px;
- *
+.heading-1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 1rem;
+  /*
  *   @include tablet-breakpoint {
  *     font-size: 64px;
  *     line-height: 64px;
@@ -169,21 +160,10 @@ body {
  *     left: 165px;
  *     top: 221px;
  *   }
- * }
- */
-/*
- * .copy-1 {
- *   // all
- *   position: absolute;
- *
- *   // modbile
- *   width: 327px;
- *   height: 156px;
- *   left: 24px;
- *   top: 300px;
- *   font-size: 16px;
- *   line-height: 26px;
- *
+ */ }
+
+.copy-1 {
+  /*
  *   @include tablet-breakpoint {
  *     width: 514px;
  *     height: 112px;
@@ -199,8 +179,8 @@ body {
  *     left: 164.5px;
  *     top: 437px;
  *   }
- * }
- */
+ */ }
+
 /*
  * .middle-box {
  *   // all

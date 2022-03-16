@@ -12,11 +12,9 @@ body {
   // mobile settings first
   background-image: url("./assets/bg-main-mobile.png");
   background-attachment: fixed;
-  background-position: 30% 30%;
-  height: 780px;
-  width: 582px;
+  background-position: 0 -280px;
 
-/*
+  /*
  *   @include tablet-breakpoint {
  *     background-image: url("./assets/bg-main-tablet.png");
  *     left: -254px;
@@ -37,10 +35,10 @@ body {
 
 .background-pattern-1 {
   // all breakpoints
-  position: absolute;
+  // position: absolute;
   // NOTE: do not display this background on mobile!
 
-/*
+  /*
  *   @include tablet-breakpoint {
  *     background-image: url("./assets/bg-pattern-1.svg");
  *     height: 400px;
@@ -67,7 +65,7 @@ body {
   // mobile
   margin: 2rem 0 4rem 1rem;
 
-/*
+  /*
  *   @include tablet-breakpoint {
  *     left: 39.15px;
  *     top: 61.99px;
@@ -81,22 +79,19 @@ body {
 }
 
 .heading-matter {
+  // responsive width taking into account 1rem l&r margin
+  width: calc(100% - 2rem);
+  height: 320px;
   margin: 0 1rem 6rem 1rem;
 }
 
-/*
- * .heading-1 {
- *   // all
- *   position: absolute;
- *
- *   // mobile
- *   font-size: 40px;
- *   line-height: 48px;
- *   width: 327px;
- *   height: 144px;
- *   left: 24px;
- *   top: 136px;
- *
+.heading-1 {
+  // mobile
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 1rem;
+
+  /*
  *   @include tablet-breakpoint {
  *     font-size: 64px;
  *     line-height: 64px;
@@ -113,22 +108,13 @@ body {
  *     left: 165px;
  *     top: 221px;
  *   }
- * }
  */
+}
 
-/*
- * .copy-1 {
- *   // all
- *   position: absolute;
- *
- *   // modbile
- *   width: 327px;
- *   height: 156px;
- *   left: 24px;
- *   top: 300px;
- *   font-size: 16px;
- *   line-height: 26px;
- *
+.copy-1 {
+  // .body-1 has mobile defaults
+
+  /*
  *   @include tablet-breakpoint {
  *     width: 514px;
  *     height: 112px;
@@ -144,8 +130,8 @@ body {
  *     left: 164.5px;
  *     top: 437px;
  *   }
- * }
  */
+}
 
 /*
  * .middle-box {
