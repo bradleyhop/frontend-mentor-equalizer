@@ -8,79 +8,77 @@ body {
   // all
   background-repeat: no-repeat;
 
-  // mobile settings first
+  // mobile
   background-image: url("./assets/bg-main-mobile.png");
   background-position: 0 -275px;
 
+  @include tablet-breakpoint {
+    background-image: url("./assets/bg-main-tablet.png");
+    background-position: -375px -225px;
+  }
+
   /*
- *   @include tablet-breakpoint {
- *     background-image: url("./assets/bg-main-tablet.png");
- *     left: -254px;
- *     top: -122px;
- *     height: 808px;
- *     width: 983px;
- *   }
- *
- *   @include desktop-breakpoint {
- *     background-image: url("./assets/bg-main-desktop.png");
- *     left: -146px;
- *     top: -122px;
- *     height: 1758px;
- *     width: 1613px;
- *   }
- */
+   * @include desktop-breakpoint {
+   *   background-image: url("./assets/bg-main-desktop.png");
+   *   left: -146px;
+   *   top: -122px;
+   *   height: 1758px;
+   *   width: 1613px;
+   * }
+   */
 }
 
 .background-pattern-1 {
   // all breakpoints
-  // position: absolute;
+  background-repeat: no-repeat;
   // NOTE: do not display this background on mobile!
 
+  @include tablet-breakpoint {
+    display: block;
+    background-image: url("./assets/bg-pattern-1.svg");
+    background-position: 32rem -2rem;
+  }
+
   /*
- *   @include tablet-breakpoint {
- *     background-image: url("./assets/bg-pattern-1.svg");
- *     height: 400px;
- *     width: 266.67px;
- *     left: 537px;
- *     top: -32px;
- *   }
- *
- *   @include desktop-breakpoint {
- *     background-image: url("./assets/bg-pattern-1.svg");
- *     height: 468px;
- *     width: 312px;
- *     left: 1128px;
- *     top: -40px;
- *   }
- */
+   * @include desktop-breakpoint {
+   *   background-image: url("./assets/bg-pattern-1.svg");
+   *   height: 468px;
+   *   width: 312px;
+   *   left: 1128px;
+   *   top: -40px;
+   * }
+   */
 }
 
 .logo {
   // all breakpoints
-  fill: $blackish;
-  height: 32px;
+  height: 2rem;
 
   // mobile
   margin: 2rem 0 4rem 1rem;
 
+  @include tablet-breakpoint {
+    margin: 2.5rem 0 6rem 2.5rem;
+  }
+
   /*
- *   @include tablet-breakpoint {
- *     left: 39.15px;
- *     top: 61.99px;
- *   }
- *
- *   @include desktop-breakpoint {
- *     left: 166.15px;
- *     top: 61.99px;
- *   }
- */
+   * @include desktop-breakpoint {
+   *   left: 166.15px;
+   *   top: 61.99px;
+   * }
+   */
 }
 
 .heading-matter {
   // responsive width taking into account 1rem l&r margin
   width: calc(100% - 2rem);
-  height: 320px;
+  height: 20rem;
   margin: 0 1rem 6rem 1rem;
+
+  @include tablet-breakpoint {
+    width: calc(60% - 2rem);
+    margin-left: 2.5rem;
+  }
 }
 
 .heading-1 {
@@ -89,101 +87,114 @@ body {
   line-height: 48px;
   margin-bottom: 1rem;
 
+  @include tablet-breakpoint {
+    max-width: 14ch;
+  }
+
   /*
- *   @include tablet-breakpoint {
- *     font-size: 64px;
- *     line-height: 64px;
- *     letter-spacing: -0.727273px;
- *     width: 520px;
- *     height: 192px;
- *     left: 39px;
- *     top: 189px;
- *   }
- *
- *   @include desktop-breakpoint {
- *     width: 1015px;
- *     height: 176px;
- *     left: 165px;
- *     top: 221px;
- *   }
- */
+   * @include desktop-breakpoint {
+   *   width: 1015px;
+   *   height: 176px;
+   *   left: 165px;
+   *   top: 221px;
+   * }
+   */
 }
 
 .copy-1 {
   // .body-1 has mobile defaults
+  font-size: 16px;
+  line-height: 26px;
+
+  @include tablet-breakpoint {
+    font-size: 18px;
+    line-height: 28px;
+  }
 
   /*
- *   @include tablet-breakpoint {
- *     width: 514px;
- *     height: 112px;
- *     left: 39px;
- *     top: 409px;
- *     font-size: 18px;
- *     line-height: 28px;
- *   }
- *
- *   @include desktop-breakpoint {
- *     width: 825px;
- *     height: 102px;
- *     left: 164.5px;
- *     top: 437px;
- *   }
- */
+   * @include desktop-breakpoint {
+   *   width: 825px;
+   *   height: 102px;
+   *   left: 164.5px;
+   *   top: 437px;
+   * }
+   */
 }
 
 .product-container {
   // modbile
-  height: 1024px;
-  width: 100%;
+  height: 64rem;
+  max-width: 100%;
+
+  @include tablet-breakpoint {
+    height: 52rem;
+    margin-bottom: 2rem;
+  }
 
   /*
- *   @include tablet-breakpoint {
- *     height: 600px;
- *     width: 696px;
- *     left: 33px;
- *     top: 770px;
- *   }
- *
- *   @include desktop-breakpoint {
- *     height: 600px;
- *     width: 1110px;
- *     left: 165px;
- *     top: 860px;
- *   }
- */
+   * @include desktop-breakpoint {
+   *   height: 600px;
+   *   width: 1110px;
+   *   left: 165px;
+   *   top: 860px;
+   * }
+   */
 }
 
 .screenshot {
-  width: 50%;
-  height: auto;
   display: block;
+  width: 50%;
   margin: 0 auto;
+
+  @include tablet-breakpoint {
+    width: 16.5rem;
+    margin-left: 6rem;
+    // on top of the black box, below the pricing info
+    z-index: -500;
+  }
 }
 
 .black-box-container {
-  height: 600px;
+  height: 37.5rem;
   width: 100%;
   background-color: $blackish;
   z-index: -999;
   position: relative;
   top: -20rem;
   border-radius: 12px;
+
+  @include tablet-breakpoint {
+    width: calc(100% - 5rem);
+    margin: auto;
+    top: -26rem;
+  }
 }
 
 .middle-background-img {
   width: 70%;
-  height: auto;
   display: block;
   margin: 0 auto;
+
+  @include tablet-breakpoint {
+    width: 17.5rem;
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+  }
 }
 
 .action-container {
-  height: 546px;
   width: 100%;
   border-radius: 12px;
   background: $orangish;
   position: relative;
   top: -34rem;
+
+  @include tablet-breakpoint {
+    width: 25rem;
+    top: -54rem;
+    left: 17rem;
+  }
 }
 
 .action-copy-container {
@@ -202,7 +213,7 @@ body {
 
 .pricing {
   color: $whiteish;
-  height: 52px;
+  height: 3.25rem;
   display: inline-flex;
   align-content: center;
   margin-bottom: 2rem;
@@ -233,8 +244,8 @@ body {
 }
 
 .button-container {
-  width: 296px;
-  height: 61px;
+  width: 18.5rem;
+  height: 3.8rem;
   border-radius: 12px;
   display: flex;
   align-content: center;
@@ -262,12 +273,30 @@ body {
   align-self: center;
 }
 
+.android-mb {
+  margin-bottom: 2rem;
+}
+
 footer {
   margin: 0 1rem;
+
+  @include tablet-breakpoint {
+    margin: 0 2.5rem;
+  }
 }
 
 .logo-bottom {
   margin: 2rem 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-breakpoint {
+    flex-direction: row;
+    align-items: space-between;
+  }
 }
 
 .footer-copy {
@@ -275,6 +304,8 @@ footer {
   line-height: 26px;
   color: $blackish;
   margin-bottom: 4rem;
+
+  width: 50%;
 }
 
 .contact-email {
@@ -287,11 +318,20 @@ footer {
   }
 }
 
+ul {
+  list-style-type: none;
+}
+
 .social-media-links {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
   margin-bottom: 4rem;
+  width: 50%;
+
+  @include tablet-breakpoint {
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
 }
 
 .link-item {
