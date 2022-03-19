@@ -72,54 +72,36 @@ h2 {
   .android-button:hover {
     background: #ffba66; }
 
-body {
-  background-color: #fcf9f8; }
-
 .background-img {
   background-repeat: no-repeat;
   background-image: url("./assets/bg-main-mobile.png");
-  background-position: 0 -275px;
-  /*
-   * @include desktop-breakpoint {
-   *   background-image: url("./assets/bg-main-desktop.png");
-   *   left: -146px;
-   *   top: -122px;
-   *   height: 1758px;
-   *   width: 1613px;
-   * }
-   */ }
+  background-position: 0 -275px; }
   @media only screen and (min-width: 600px) {
     .background-img {
       background-image: url("./assets/bg-main-tablet.png");
       background-position: -375px -225px; } }
+  @media only screen and (min-width: 801px) {
+    .background-img {
+      background-image: url("./assets/bg-main-desktop.png");
+      background-position: -300px -225px; } }
 .background-pattern-1 {
-  background-repeat: no-repeat;
-  /*
-   * @include desktop-breakpoint {
-   *   background-image: url("./assets/bg-pattern-1.svg");
-   *   height: 468px;
-   *   width: 312px;
-   *   left: 1128px;
-   *   top: -40px;
-   * }
-   */ }
+  background-repeat: no-repeat; }
   @media only screen and (min-width: 600px) {
     .background-pattern-1 {
-      display: block;
       background-image: url("./assets/bg-pattern-1.svg");
       background-position: 32rem -2rem; } }
+  @media only screen and (min-width: 801px) {
+    .background-pattern-1 {
+      background-position: right -2rem; } }
 .logo {
   height: 2rem;
-  margin: 2rem 0 4rem 1rem;
-  /*
-   * @include desktop-breakpoint {
-   *   left: 166.15px;
-   *   top: 61.99px;
-   * }
-   */ }
+  margin: 2rem 0 4rem 1rem; }
   @media only screen and (min-width: 600px) {
     .logo {
       margin: 2.5rem 0 6rem 2.5rem; } }
+  @media only screen and (min-width: 801px) {
+    .logo {
+      margin: 4rem 0 8rem 10.3rem; } }
 .heading-matter {
   width: calc(100% - 2rem);
   height: 20rem;
@@ -128,6 +110,10 @@ body {
     .heading-matter {
       width: calc(60% - 2rem);
       margin-left: 2.5rem; } }
+  @media only screen and (min-width: 801px) {
+    .heading-matter {
+      width: calc(60% - 20.6rem);
+      margin-left: 10.3rem; } }
 .heading-1 {
   font-size: 40px;
   line-height: 48px;
@@ -164,9 +150,6 @@ body {
   /*
    * @include desktop-breakpoint {
    *   height: 600px;
-   *   width: 1110px;
-   *   left: 165px;
-   *   top: 860px;
    * }
    */ }
   @media only screen and (min-width: 600px) {
@@ -176,17 +159,21 @@ body {
 .screenshot {
   display: block;
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 20; }
   @media only screen and (min-width: 600px) {
     .screenshot {
       width: 16.5rem;
-      margin-left: 6rem;
-      z-index: -500; } }
+      margin-left: 6rem; } }
+  @media only screen and (min-width: 801px) {
+    .screenshot {
+      width: 19.5rem;
+      margin-left: 17.7rem; } }
 .black-box-container {
   height: 37.5rem;
   width: 100%;
   background-color: #191826;
-  z-index: -999;
   position: relative;
   top: -20rem;
   border-radius: 12px; }
@@ -195,6 +182,9 @@ body {
       width: calc(100% - 5rem);
       margin: auto;
       top: -26rem; } }
+  @media only screen and (min-width: 801px) {
+    .black-box-container {
+      width: calc(100% - 20.6rem); } }
 .middle-background-img {
   width: 70%;
   display: block;
@@ -205,17 +195,26 @@ body {
       position: relative;
       top: -2rem;
       left: 1rem; } }
+  @media only screen and (min-width: 801px) {
+    .middle-background-img {
+      width: 19.5rem;
+      left: -2.75rem; } }
 .action-container {
   width: 100%;
   border-radius: 12px;
   background: #fa7352;
   position: relative;
-  top: -34rem; }
+  top: -34rem;
+  z-index: 50; }
   @media only screen and (min-width: 600px) {
     .action-container {
       width: 25rem;
       top: -54rem;
       left: 17rem; } }
+  @media only screen and (min-width: 801px) {
+    .action-container {
+      width: 27.9rem;
+      left: 47rem; } }
 .action-copy-container {
   max-height: 100%;
   margin: 0 2rem;
@@ -226,7 +225,10 @@ body {
 
 .action-copy {
   margin-bottom: 2rem; }
-
+  @media only screen and (min-width: 801px) {
+    .action-copy {
+      font-size: 20px;
+      line-height: 34px; } }
 .pricing {
   color: #fcf9f8;
   height: 3.25rem;
@@ -270,7 +272,7 @@ body {
   color: inherit;
   font-weight: bold;
   font-size: 18px;
-  line-height: 61px;
+  line-height: 32px;
   letter-spacing: -0.18px;
   margin-left: 0.5rem; }
 
@@ -303,8 +305,10 @@ footer {
   line-height: 26px;
   color: #191826;
   margin-bottom: 4rem;
-  width: 50%; }
-
+  width: 75%; }
+  @media only screen and (min-width: 600px) {
+    .footer-copy {
+      width: 50%; } }
 .contact-email {
   font-weight: bold;
   text-decoration: none;
