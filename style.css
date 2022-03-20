@@ -1,4 +1,7 @@
 /*
+ * For all classes, mobile breakpoint styling is listed first
+ */
+/*
   * styles and typography from the design system document given;
   * also including browser default clearing, device breakpoints
   */
@@ -20,7 +23,7 @@ h1 {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.45px; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 820px) {
     h1 {
       font-size: 88px;
       line-height: 88px;
@@ -30,14 +33,14 @@ h2 {
   color: #fcf9f8;
   font-size: 32px;
   line-height: 40px; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 820px) {
     h2 {
       font-size: 40px;
       line-height: 52px; } }
 .body-1 {
   font-size: 16px;
   line-height: 26px; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 820px) {
     .body-1 {
       font-size: 20px;
       line-height: 34px; } }
@@ -45,7 +48,7 @@ h2 {
   color: #fcf9f8;
   font-size: 18px;
   line-height: 28px; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 820px) {
     .body-2 {
       line-height: 26px; } }
 .button-skel {
@@ -57,7 +60,7 @@ h2 {
   line-height: 32px;
   letter-spacing: -0.18px;
   border-radius: 12px; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 820px) {
     .button-skel {
       width: 333px; } }
 .ios-button {
@@ -72,15 +75,28 @@ h2 {
   .android-button:hover {
     background: #ffba66; }
 
+/*
+ * Widths for sections and footer of breakpoint; not settings these by page 'cause mobile is
+ * different, of course
+ */
+.section-1 {
+  width: 90%;
+  margin: auto; }
+  @media only screen and (min-width: 600px) {
+    .section-1 {
+      width: 90%; } }
+  @media only screen and (min-width: 820px) {
+    .section-1 {
+      width: 80%; } }
 .background-img {
   background-repeat: no-repeat;
   background-image: url("./assets/bg-main-mobile.png");
-  background-position: 0 -275px; }
+  background-position: 0 -17.2rem; }
   @media only screen and (min-width: 600px) {
     .background-img {
       background-image: url("./assets/bg-main-tablet.png");
-      background-position: -375px -225px; } }
-  @media only screen and (min-width: 801px) {
+      background-position: -25rem -14rem; } }
+  @media only screen and (min-width: 820px) {
     .background-img {
       background-image: url("./assets/bg-main-desktop.png");
       background-position: -300px -225px; } }
@@ -89,73 +105,64 @@ h2 {
   @media only screen and (min-width: 600px) {
     .background-pattern-1 {
       background-image: url("./assets/bg-pattern-1.svg");
-      background-position: 32rem -2rem; } }
-  @media only screen and (min-width: 801px) {
+      background-position: 36rem -2rem;
+      background-size: 16rem auto; } }
+  @media only screen and (min-width: 820px) {
     .background-pattern-1 {
-      background-position: right -2rem; } }
+      background-position: right -2rem;
+      background-size: 18rem auto; } }
 .logo {
   height: 2rem;
   margin: 2rem 0 4rem 1rem; }
   @media only screen and (min-width: 600px) {
     .logo {
-      margin: 2.5rem 0 6rem 2.5rem; } }
-  @media only screen and (min-width: 801px) {
+      margin: 2.5rem 0 6rem 0; } }
+  @media only screen and (min-width: 820px) {
     .logo {
-      margin: 4rem 0 8rem 10.3rem; } }
+      margin: 4rem 0 8rem 0; } }
 .heading-matter {
-  width: calc(100% - 2rem);
-  height: 20rem;
-  margin: 0 1rem 6rem 1rem; }
-  @media only screen and (min-width: 600px) {
-    .heading-matter {
-      width: calc(60% - 2rem);
-      margin-left: 2.5rem; } }
-  @media only screen and (min-width: 801px) {
-    .heading-matter {
-      width: calc(60% - 20.6rem);
-      margin-left: 10.3rem; } }
+  margin-bottom: 6rem; }
+
 .heading-1 {
   font-size: 40px;
   line-height: 48px;
-  margin-bottom: 1rem;
-  /*
-   * @include desktop-breakpoint {
-   *   width: 1015px;
-   *   height: 176px;
-   *   left: 165px;
-   *   top: 221px;
-   * }
-   */ }
+  margin-bottom: 1rem; }
   @media only screen and (min-width: 600px) {
     .heading-1 {
-      max-width: 14ch; } }
+      width: 28rem;
+      font-size: 64px;
+      line-height: 64px;
+      letter-spacing: -0.73px; } }
+  @media only screen and (min-width: 820px) {
+    .heading-1 {
+      width: 55rem;
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -1px; } }
 .copy-1 {
   font-size: 16px;
-  line-height: 26px;
-  /*
-   * @include desktop-breakpoint {
-   *   width: 825px;
-   *   height: 102px;
-   *   left: 164.5px;
-   *   top: 437px;
-   * }
-   */ }
+  line-height: 26px; }
   @media only screen and (min-width: 600px) {
     .copy-1 {
       font-size: 18px;
-      line-height: 28px; } }
+      line-height: 28px;
+      width: 32rem; } }
+  @media only screen and (min-width: 820px) {
+    .copy-1 {
+      width: 53rem;
+      font-size: 20px;
+      line-height: 34px; } }
 .product-container {
   height: 64rem;
-  max-width: 100%;
-  /*
-   * @include desktop-breakpoint {
-   *   height: 600px;
-   * }
-   */ }
+  width: 100%; }
   @media only screen and (min-width: 600px) {
     .product-container {
       height: 52rem;
-      margin-bottom: 2rem; } }
+      margin: 2rem auto;
+      width: 90%; } }
+  @media only screen and (min-width: 820px) {
+    .product-container {
+      width: 80%; } }
 .screenshot {
   display: block;
   width: 50%;
@@ -165,11 +172,11 @@ h2 {
   @media only screen and (min-width: 600px) {
     .screenshot {
       width: 16.5rem;
-      margin-left: 6rem; } }
-  @media only screen and (min-width: 801px) {
+      margin-left: 4rem; } }
+  @media only screen and (min-width: 820px) {
     .screenshot {
       width: 19.5rem;
-      margin-left: 17.7rem; } }
+      margin-left: 6rem; } }
 .black-box-container {
   height: 37.5rem;
   width: 100%;
@@ -179,26 +186,23 @@ h2 {
   border-radius: 12px; }
   @media only screen and (min-width: 600px) {
     .black-box-container {
-      width: calc(100% - 5rem);
       margin: auto;
       top: -26rem; } }
-  @media only screen and (min-width: 801px) {
-    .black-box-container {
-      width: calc(100% - 20.6rem); } }
 .middle-background-img {
   width: 70%;
   display: block;
   margin: 0 auto; }
   @media only screen and (min-width: 600px) {
     .middle-background-img {
+      margin: 0;
       width: 17.5rem;
       position: relative;
       top: -2rem;
-      left: 1rem; } }
-  @media only screen and (min-width: 801px) {
+      left: 14rem; } }
+  @media only screen and (min-width: 820px) {
     .middle-background-img {
       width: 19.5rem;
-      left: -2.75rem; } }
+      left: 20rem; } }
 .action-container {
   width: 100%;
   border-radius: 12px;
@@ -210,22 +214,25 @@ h2 {
     .action-container {
       width: 25rem;
       top: -54rem;
-      left: 17rem; } }
-  @media only screen and (min-width: 801px) {
+      left: 15rem; } }
+  @media only screen and (min-width: 820px) {
     .action-container {
       width: 27.9rem;
-      left: 47rem; } }
+      left: 35rem;
+      top: -56rem; } }
 .action-copy-container {
-  max-height: 100%;
-  margin: 0 2rem;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 2rem; }
 
 .action-heading {
   margin: 3rem 0 1rem 0; }
-
+  @media only screen and (min-width: 600px) {
+    .action-heading {
+      font-size: 40px;
+      line-height: 52px; } }
 .action-copy {
   margin-bottom: 2rem; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 600px) {
     .action-copy {
       font-size: 20px;
       line-height: 34px; } }
@@ -272,7 +279,7 @@ h2 {
   color: inherit;
   font-weight: bold;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 64px;
   letter-spacing: -0.18px;
   margin-left: 0.5rem; }
 
@@ -287,9 +294,7 @@ h2 {
 
 footer {
   margin: 0 1rem; }
-  @media only screen and (min-width: 600px) {
-    footer {
-      margin: 0 2.5rem; } }
+
 .logo-bottom {
   margin: 2rem 0; }
 
@@ -313,8 +318,6 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: #191826; }
-  .contact-email:hover {
-    text-decoration: underline; }
 
 ul {
   list-style-type: none; }
