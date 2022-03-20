@@ -298,10 +298,22 @@ $max-width-desktop: 80%;
 
 footer {
   margin: 0 1rem;
+
+  @include desktop-breakpoint {
+    display: flex;
+    flex-direction: row;
+    margin: 8rem auto !important;
+  }
 }
 
 .logo-bottom {
   margin: 2rem 0;
+}
+
+.bottom-logo-container {
+  @include desktop-breakpoint {
+    width: 30%;
+  }
 }
 
 .footer-container {
@@ -311,6 +323,10 @@ footer {
   @include tablet-breakpoint {
     flex-direction: row;
     align-items: space-between;
+  }
+
+  @include desktop-breakpoint {
+    width: 70%;
   }
 }
 
