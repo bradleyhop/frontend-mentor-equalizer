@@ -25,6 +25,27 @@
   }
 }
 
+/*
+ * Widths for sections and footer of breakpoint; not settings these by page 'cause mobile is
+ * different, of course
+ */
+$max-width-mobile: 90%;
+$max-width-tablet: 90%;
+$max-width-desktop: 80%;
+
+.section-1 {
+  width: $max-width-mobile;
+  margin: auto;
+
+  @include tablet-breakpoint {
+    width: $max-width-tablet;
+  }
+
+  @include desktop-breakpoint {
+    width: $max-width-desktop;
+  }
+}
+
 // colors
 $blueish: hsl(177, 68%, 64%);
 $orangish: hsl(12, 94%, 65%);
@@ -33,7 +54,7 @@ $whiteish: hsl(20, 33%, 98%);
 $blackish: hsl(244, 23%, 12%);
 
 // typography
-body {
+.app-wrapper {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   background-color: $whiteish;
