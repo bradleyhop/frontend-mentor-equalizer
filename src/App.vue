@@ -5,13 +5,11 @@ import EqFooter from "@/components/EqFooter.vue";
 </script>
 
 <template>
-  <div class="app-wrapper background-img">
-    <EqHeader />
+  <EqHeader />
 
-    <EqBody />
+  <EqBody />
 
-    <EqFooter />
-  </div>
+  <EqFooter />
 </template>
 
 <style lang="scss"></style>

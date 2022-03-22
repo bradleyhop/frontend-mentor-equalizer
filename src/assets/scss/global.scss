@@ -13,7 +13,7 @@
 }
 
 // breakpoints
-// NB: no mobile breakpoint because that's the default
+// NB: no mobile breakpoint because that is the default
 @mixin tablet-breakpoint {
   @media only screen and (min-width: 600px) {
     @content;
@@ -26,7 +26,7 @@
 }
 
 /*
- * Widths for sections and footer of breakpoint; not settings these by page 'cause mobile is
+ * Widths for sections and footer of breakpoint; not settings these by page cause mobile is
  * different, of course
  */
 $max-width-mobile: 90%;
@@ -54,10 +54,27 @@ $whiteish: hsl(20, 33%, 98%);
 $blackish: hsl(244, 23%, 12%);
 
 // typography
-.app-wrapper {
+body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   background-color: $whiteish;
+}
+
+.background-img {
+  // all
+  background-repeat: no-repeat;
+  background-image: url("@/assets/img/bg-main-mobile.png");
+  background-position: 0 -17.2rem;
+
+  @include tablet-breakpoint {
+    background-image: url("@/assets/img/bg-main-tablet.png");
+    background-position: -25rem -14rem;
+  }
+
+  @include desktop-breakpoint {
+    background-image: url("@/assets/img/bg-main-desktop.png");
+    background-position: -300px -225px;
+  }
 }
 
 h1 {
