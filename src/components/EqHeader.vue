@@ -5,24 +5,66 @@ export default {
 </script>
 
 <template>
-  <section class="section-1" aria-labelledby="page-heading">
-    <img class="logo" src="@/assets/img/logo.svg" alt="equalizer logo" />
+  <div class="background-pattern-1-wrapper">
+    <section class="section-1 heading-container" aria-labelledby="page-heading">
+      <img class="logo" src="@/assets/img/logo.svg" alt="equalizer logo" />
 
-    <div class="heading-matter">
-      <h1 id="page-heading" class="heading-1">
-        We make your music sound extraordinary.
-      </h1>
-      <p class="body-1 copy-1">
-        A system audio equalizer specifically designed for Android and iOS.
-        Freely tune the way your music sounds with a professional grade
-        parametric EQ &amp; volume mixer. Control bass, mids, treble, gain
-        control, reverb, and more!
-      </p>
-    </div>
-  </section>
+      <div class="heading-matter">
+        <h1 id="page-heading" class="heading-1">
+          We make your music sound extraordinary.
+        </h1>
+
+        <p class="body-1 copy-1">
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ &amp; volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </div>
+    </section>
+  </div>
 </template>
 
 <style lang="scss">
+.background-pattern-1-wrapper {
+  background-repeat: no-repeat;
+  width: 100%;
+  // NOTE: do not display this background on mobile!
+
+  @include tablet-breakpoint {
+    height: 50vh;
+    background-image: url("@/assets/img/bg-pattern-1.svg");
+    background-position: 36rem -2rem;
+    background-size: 16rem auto;
+  }
+
+  @include desktop-breakpoint {
+    height: 60vh;
+    background-position: right -2rem;
+    background-size: 18rem auto;
+  }
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.logo {
+  height: 33px;
+  width: 147px;
+  margin: 2rem 0 4rem 1rem;
+
+  @include tablet-breakpoint {
+    margin: 2.5rem 0 6rem 0;
+  }
+
+  @include desktop-breakpoint {
+    margin: 4rem 0 8rem 0;
+  }
+}
+
 .heading-matter {
   margin-bottom: 6rem;
 }
@@ -53,9 +95,9 @@ export default {
   line-height: 26px;
 
   @include tablet-breakpoint {
+    width: 32rem;
     font-size: 18px;
     line-height: 28px;
-    width: 32rem;
   }
 
   @include desktop-breakpoint {

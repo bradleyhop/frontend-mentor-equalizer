@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <main class="product-container" aria-labelledby="product-info">
+  <main class="product-container" aria-labeledby="product-info">
     <img
       class="screenshot"
       src="@/assets/img/illustration-app.png"
@@ -100,7 +100,7 @@ export default {
   margin: 0 auto;
   position: relative;
   // set to positive value so that background colors are not overriden!
-  z-index: 20;
+  z-index: 20; // stuck in the middle with you;)
 
   @include tablet-breakpoint {
     width: 16.5rem;
@@ -154,7 +154,7 @@ export default {
   position: relative;
   top: -34rem;
   // set to positive value so that background colors are not overriden!
-  z-index: 50;
+  z-index: 50; // on top of everything else
 
   @include tablet-breakpoint {
     width: 25rem;
