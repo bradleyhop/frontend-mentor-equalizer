@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <main class="product-container" aria-labeledby="product-info">
+  <main class="product-container">
     <img
       class="screenshot"
       src="@/assets/img/illustration-app.png"
@@ -77,7 +77,7 @@ export default {
   </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .product-container {
   // modbile
   height: 64rem;

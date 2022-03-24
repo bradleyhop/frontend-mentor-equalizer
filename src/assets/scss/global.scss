@@ -3,19 +3,10 @@
   * also including browser default clearing, device breakpoints
   */
 
-// clear broswer defaults
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 // breakpoints
 // NB: no mobile breakpoint because that is the default
 @mixin tablet-breakpoint {
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 700px) {
     @content;
   }
 }
@@ -54,10 +45,13 @@ $whiteish: hsl(20, 33%, 98%);
 $blackish: hsl(244, 23%, 12%);
 
 // typography
-body {
+.defaults {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   background-color: $whiteish;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .background-img {
@@ -85,9 +79,6 @@ h1 {
   line-height: 48px;
   letter-spacing: -0.45px;
 
-  @include tablet-breakpoint {
-  }
-
   @include desktop-breakpoint {
     font-size: 88px;
     line-height: 88px;
@@ -111,9 +102,6 @@ h2 {
 .body-1 {
   font-size: 16px;
   line-height: 26px;
-
-  @include tablet-breakpoint {
-  }
 
   @include desktop-breakpoint {
     font-size: 20px;

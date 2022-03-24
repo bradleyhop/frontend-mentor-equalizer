@@ -20,4 +20,4 @@ export default {
   <EqFooter />
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped></style>

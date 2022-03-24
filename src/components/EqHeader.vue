@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="background-pattern-1-wrapper">
-    <section class="section-1 heading-container" aria-labelledby="page-heading">
+    <header class="section-1 heading-container" aria-labelledby="page-heading">
       <img class="logo" src="@/assets/img/logo.svg" alt="equalizer logo" />
 
       <div class="heading-matter">
@@ -21,11 +21,11 @@ export default {
           control, reverb, and more!
         </p>
       </div>
-    </section>
+    </header>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .background-pattern-1-wrapper {
   background-repeat: no-repeat;
   width: 100%;
