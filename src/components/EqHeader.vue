@@ -69,7 +69,7 @@ export default {
 }
 
 .heading-matter {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .heading-1 {

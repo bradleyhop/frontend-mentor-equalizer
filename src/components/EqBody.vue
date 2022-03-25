@@ -79,21 +79,27 @@ export default {
 <style lang="scss">
 .product-container {
   // modbile
-  min-height: 120vh;
+  min-height: 63rem;
   width: 100% !important;
   position: relative;
 
   @include tablet-breakpoint {
-    //height: 60vh;
+    min-height: 52rem;
     margin: 2rem auto;
-    width: 90%;
+    width: 90% !important;
+  }
+
+  @include desktop-breakpoint {
+    width: 80% !important;
   }
 }
 
 .screenshot {
   //display: block;
-  width: 55%;
-  inset: auto 0 auto 0;
+  width: 12rem;
+  //inset: auto 0 auto 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   position: absolute;
   //position: relative;
@@ -102,26 +108,29 @@ export default {
 
   @include tablet-breakpoint {
     width: 16.5rem;
-    margin-left: 4rem;
+    right: 40%;
   }
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    margin-left: 6rem;
+    right: 50%;
   }
 }
 
 .black-box-container {
   border-radius: 12px;
-  min-height: 55vh;
+  min-height: 26rem;
   width: 100%;
   background-color: $blackish;
   position: absolute;
-  top: 10vh;
+  top: 8rem;
 
   @include tablet-breakpoint {
-    margin: auto;
-    //top: -26rem;
+    min-height: 34rem;
+  }
+
+  @include desktop-breakpoint {
+    top: 14rem;
   }
 }
 
@@ -129,22 +138,24 @@ export default {
   width: 70%;
   position: absolute;
   //display: block;
-  inset: auto 0 auto 0;
+  //inset: auto 0 auto 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  top: 10vh; // match .black-box-container position
+  top: 8rem; // match .black-box-container position
 
   @include tablet-breakpoint {
-    // reset margin for responsiveness
-    margin: 0;
     width: 17.5rem;
-    //position: relative;
-    //top: -2rem;
-    //left: 14rem;
+    top: 6.5rem;
+    right: 0;
+    bottom: 0;
+    left: 3rem;
   }
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    //left: 20rem;
+    top: 14rem;
+    right: 9.3rem;
   }
 }
 
@@ -157,9 +168,8 @@ export default {
   z-index: 50; // on top of everything else
 
   @include tablet-breakpoint {
-    width: 25rem;
-    //top: -54rem;
-    //left: 15rem;
+    max-width: 23rem;
+    left: 36vw;
   }
 
   @include desktop-breakpoint {
