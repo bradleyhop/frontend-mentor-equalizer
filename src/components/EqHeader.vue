@@ -6,7 +6,10 @@ export default {
 
 <template>
   <div class="background-pattern-1-wrapper">
-    <header class="section-1 heading-container" aria-labelledby="page-heading">
+    <header
+      class="device-widths heading-container"
+      aria-labelledby="page-heading"
+    >
       <img class="logo" src="@/assets/img/logo.svg" alt="equalizer logo" />
 
       <div class="heading-matter">
@@ -25,21 +28,21 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .background-pattern-1-wrapper {
   background-repeat: no-repeat;
   width: 100%;
   // NOTE: do not display this background on mobile!
 
   @include tablet-breakpoint {
-    height: 50vh;
+    //height: 50vh;
     background-image: url("@/assets/img/bg-pattern-1.svg");
     background-position: 36rem -2rem;
     background-size: 16rem auto;
   }
 
   @include desktop-breakpoint {
-    height: 60vh;
+    //height: 75vh;
     background-position: right -2rem;
     background-size: 18rem auto;
   }
@@ -54,7 +57,7 @@ export default {
 .logo {
   height: 33px;
   width: 147px;
-  margin: 2rem 0 4rem 1rem;
+  margin: 2rem 0 4rem 0;
 
   @include tablet-breakpoint {
     margin: 2.5rem 0 6rem 0;

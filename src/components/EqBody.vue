@@ -5,19 +5,18 @@ export default {
 </script>
 
 <template>
-  <main class="product-container">
+  <main class="product-container device-widths">
     <img
       class="screenshot"
       src="@/assets/img/illustration-app.png"
       alt="screenshot of equalizer app in use"
     />
-    <div class="black-box-container">
-      <img
-        class="middle-background-img"
-        src="@/assets/img/bg-pattern-2.svg"
-        alt="background image"
-      />
-    </div>
+    <div class="black-box-container"></div>
+    <img
+      class="middle-background-img"
+      src="@/assets/img/bg-pattern-2.svg"
+      alt="background image"
+    />
 
     <div class="action-container">
       <div class="action-copy-container">
@@ -77,28 +76,27 @@ export default {
   </main>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .product-container {
   // modbile
-  height: 64rem;
-  width: 100%;
+  min-height: 120vh;
+  width: 100% !important;
+  position: relative;
 
   @include tablet-breakpoint {
-    height: 52rem;
+    //height: 60vh;
     margin: 2rem auto;
-    width: $max-width-tablet;
-  }
-
-  @include desktop-breakpoint {
-    width: $max-width-desktop;
+    width: 90%;
   }
 }
 
 .screenshot {
-  display: block;
-  width: 50%;
+  //display: block;
+  width: 55%;
+  inset: auto 0 auto 0;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  //position: relative;
   // set to positive value so that background colors are not overriden!
   z-index: 20; // stuck in the middle with you;)
 
@@ -114,58 +112,60 @@ export default {
 }
 
 .black-box-container {
-  height: 37.5rem;
+  border-radius: 12px;
+  min-height: 55vh;
   width: 100%;
   background-color: $blackish;
-  position: relative;
-  top: -20rem;
-  border-radius: 12px;
+  position: absolute;
+  top: 10vh;
 
   @include tablet-breakpoint {
     margin: auto;
-    top: -26rem;
+    //top: -26rem;
   }
 }
 
 .middle-background-img {
   width: 70%;
-  display: block;
+  position: absolute;
+  //display: block;
+  inset: auto 0 auto 0;
   margin: 0 auto;
+  top: 10vh; // match .black-box-container position
 
   @include tablet-breakpoint {
     // reset margin for responsiveness
     margin: 0;
     width: 17.5rem;
-    position: relative;
-    top: -2rem;
-    left: 14rem;
+    //position: relative;
+    //top: -2rem;
+    //left: 14rem;
   }
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    left: 20rem;
+    //left: 20rem;
   }
 }
 
 .action-container {
-  width: 100%;
   border-radius: 12px;
   background: $orangish;
-  position: relative;
-  top: -34rem;
+  position: absolute;
+  bottom: 0;
   // set to positive value so that background colors are not overriden!
   z-index: 50; // on top of everything else
 
   @include tablet-breakpoint {
     width: 25rem;
-    top: -54rem;
-    left: 15rem;
+    //top: -54rem;
+    //left: 15rem;
   }
 
   @include desktop-breakpoint {
     width: 27.9rem;
-    left: 35rem;
-    top: -56rem;
+    //left: 35rem;
+    //top: -56rem;
   }
 }
 

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <footer class="section-1">
+  <footer class="device-widths">
     <div class="footer-wrapper">
       <div class="bottom-logo-container">
         <img
@@ -80,13 +80,14 @@ export default {
   </footer>
 </template>
 
-<!-- scoping style here messes everything up -->
 <style lang="scss">
 .footer-wrapper {
+  position: relative;
+
   @include desktop-breakpoint {
     display: flex;
     flex-direction: row;
-    margin: 8rem auto !important;
+    margin: 8rem auto;
   }
 }
 
@@ -118,7 +119,7 @@ export default {
   font-size: 16px;
   line-height: 26px;
   color: $blackish;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem 0;
   width: 75%;
 
   @include tablet-breakpoint {
@@ -136,7 +137,8 @@ export default {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem 0;
+  padding: 0;
   width: 50%;
 
   @include tablet-breakpoint {
