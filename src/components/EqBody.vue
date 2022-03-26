@@ -91,6 +91,7 @@ export default {
 
   @include desktop-breakpoint {
     width: 80% !important;
+    min-height: 54rem;
   }
 }
 
@@ -169,14 +170,14 @@ export default {
 
   @include tablet-breakpoint {
     max-width: 23rem;
-    left: 36vw;
+    left: 17rem;
   }
 
   @include desktop-breakpoint {
     width: 27.9rem;
-    //left: 35rem;
-    //top: -56rem;
+    left: 35rem;
   }
+
 }
 
 .action-copy-container {
