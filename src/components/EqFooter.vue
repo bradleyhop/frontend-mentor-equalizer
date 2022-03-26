@@ -90,14 +90,19 @@ export default {
     margin: 8rem auto;
   }
 }
-
-.logo-bottom {
-  margin: 2rem 0;
-}
-
 .bottom-logo-container {
   @include desktop-breakpoint {
     width: 20%;
+    display: flex;
+  }
+}
+
+.logo-bottom {
+  margin: 2rem 0;
+
+  @include desktop-breakpoint {
+    margin: 0;
+    align-self: center;
   }
 }
 
@@ -125,6 +130,10 @@ export default {
   @include tablet-breakpoint {
     width: 70%;
   }
+
+  @include desktop-breakpoint {
+    margin: 0;
+  }
 }
 
 .contact-email {
@@ -144,6 +153,11 @@ export default {
   @include tablet-breakpoint {
     justify-content: flex-end;
     margin-top: 2rem;
+  }
+
+  @include desktop-breakpoint {
+    margin: 0;
+    align-self: center;
   }
 }
 
