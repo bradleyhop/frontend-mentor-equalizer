@@ -13,7 +13,7 @@ export default {
       <img class="logo" src="@/assets/img/logo.svg" alt="equalizer logo" />
 
       <div class="heading-matter">
-        <h1 id="page-heading" class="heading-1">
+        <h1 id="page-heading" class="heading-1 heading-1-container">
           We make your music sound extraordinary.
         </h1>
 
@@ -35,14 +35,12 @@ export default {
   // NOTE: do not display this background on mobile!
 
   @include tablet-breakpoint {
-    //height: 50vh;
     background-image: url("@/assets/img/bg-pattern-1.svg");
     background-position: 36rem -2rem;
     background-size: 16rem auto;
   }
 
   @include desktop-breakpoint {
-    //height: 75vh;
     background-position: right -2rem;
     background-size: 18rem auto;
   }
@@ -72,28 +70,19 @@ export default {
   margin-bottom: 4rem;
 }
 
-.heading-1 {
-  font-size: 40px;
-  line-height: 48px;
+.heading-1-container {
   margin-bottom: 1rem;
 
   @include tablet-breakpoint {
     width: 28rem;
-    font-size: 64px;
-    line-height: 64px;
-    letter-spacing: -0.73px;
   }
 
   @include desktop-breakpoint {
     width: 55rem;
-    font-size: 88px;
-    line-height: 88px;
-    letter-spacing: -1px;
   }
 }
 
 .copy-1 {
-  // .body-1 has mobile defaults
   font-size: 16px;
   line-height: 26px;
 

@@ -12,7 +12,13 @@
 }
 
 @mixin desktop-breakpoint {
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin large-desktop-breakpoint {
+  @media only screen and (min-width: 1920px) {
     @content;
   }
 }
@@ -27,6 +33,10 @@
 
   @include desktop-breakpoint {
     width: 80%;
+  }
+
+  @include large-desktop-breakpoint {
+    width: 60%;
   }
 }
 
@@ -60,17 +70,27 @@ $blackish: hsl(244, 23%, 12%);
 
   @include desktop-breakpoint {
     background-image: url("@/assets/img/bg-main-desktop.png");
-    background-position: -300px -225px;
+    background-position: -18.75rem -14rem;
+  }
+
+  @include large-desktop-breakpoint {
+    background-position: 0 0;
   }
 }
 
-h1 {
+.heading-1 {
   font-weight: bold;
   color: $blackish;
   // mobile
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.45px;
+
+  @include tablet-breakpoint {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.73px;
+  }
 
   @include desktop-breakpoint {
     font-size: 88px;
@@ -79,7 +99,7 @@ h1 {
   }
 }
 
-h2 {
+.heading-2 {
   font-weight: bold;
   color: $whiteish;
   // mobile
@@ -109,7 +129,8 @@ h2 {
   line-height: 28px;
 
   @include desktop-breakpoint {
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 34px;
   }
 }
 
@@ -124,7 +145,11 @@ h2 {
   line-height: 32px;
   letter-spacing: -0.18px;
   border-radius: 12px;
-  // TODO: center icon image and text center both horizontally and vertidally
+
+  // special rule for small foldable devices
+  @media screen and (max-width: 300px) {
+    width: 13rem;
+  }
 
   // tablet and mobile use same size buttons; bigger for desktop
   @include desktop-breakpoint {

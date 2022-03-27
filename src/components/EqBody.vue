@@ -39,7 +39,7 @@ export default {
             target="_blank"
             rel="norefferer noopener"
           >
-            <div class="button-container ios-button">
+            <div class="button-skel button-container ios-button">
               <span class="button-content">
                 <img
                   class="button-icon"
@@ -57,7 +57,7 @@ export default {
             target="_blank"
             rel="norefferer noopener"
           >
-            <div class="button-container android-button">
+            <div class="button-skel button-container android-button">
               <span class="button-content">
                 <img
                   class="button-icon"
@@ -93,6 +93,10 @@ export default {
     width: 80% !important;
     min-height: 54rem;
   }
+
+  @include large-desktop-breakpoint {
+    width: 60% !important;
+  }
 }
 
 .screenshot {
@@ -114,7 +118,7 @@ export default {
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    right: 50%;
+    right: 48%;
   }
 }
 
@@ -169,15 +173,14 @@ export default {
   z-index: 50; // on top of everything else
 
   @include tablet-breakpoint {
-    max-width: 23rem;
+    width: 23rem;
     left: 17rem;
   }
 
   @include desktop-breakpoint {
     width: 27.9rem;
-    left: 35rem;
+    left: 50%;
   }
-
 }
 
 .action-copy-container {
@@ -236,9 +239,6 @@ export default {
 }
 
 .button-container {
-  width: 18.5rem;
-  height: 3.8rem;
-  border-radius: 12px;
   display: flex;
   align-content: center;
   justify-content: center;

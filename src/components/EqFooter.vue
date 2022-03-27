@@ -92,7 +92,7 @@ export default {
 }
 .bottom-logo-container {
   @include desktop-breakpoint {
-    width: 20%;
+    width: 40%;
     display: flex;
   }
 }
@@ -103,6 +103,7 @@ export default {
   @include desktop-breakpoint {
     margin: 0;
     align-self: center;
+    padding-right: 5rem;
   }
 }
 
@@ -116,7 +117,7 @@ export default {
   }
 
   @include desktop-breakpoint {
-    width: 70%;
+    width: 100%;
   }
 }
 
