@@ -37,7 +37,7 @@ export default {
             href="https://apple.com"
             class="link-container"
             target="_blank"
-            rel="norefferer noopener"
+            rel="noreferrer noopener"
           >
             <div class="button-skel button-container ios-button">
               <span class="button-content">
@@ -55,7 +55,7 @@ export default {
             href="https://google.com"
             class="link-container android-mb"
             target="_blank"
-            rel="norefferer noopener"
+            rel="noreferrer noopener"
           >
             <div class="button-skel button-container android-button">
               <span class="button-content">

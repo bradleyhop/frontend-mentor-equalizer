@@ -23,7 +23,7 @@ export default {
             class="contact-email"
             href="mailto:equalizer@example.com"
             target="_blank"
-            rel="norefferer noopener"
+            rel="noreferrer noopener"
           >
             equalizer@example.com
           </a>
@@ -35,7 +35,7 @@ export default {
               class="icon-link"
               href="https://facebook.com"
               target="_blank"
-              rel="norefferer noopener"
+              rel="noreferrer noopener"
             >
               <img
                 class="icon"
@@ -49,7 +49,7 @@ export default {
               class="icon-link"
               href="https://instagram.com"
               target="_blank"
-              rel="norefferer noopener"
+              rel="noreferrer noopener"
             >
               <img
                 class="icon"
@@ -63,7 +63,7 @@ export default {
               class="icon-link"
               href="https://twitter.com"
               target="_blank"
-              rel="norefferer noopener"
+              rel="noreferrer noopener"
             >
               <img
                 class="icon"
