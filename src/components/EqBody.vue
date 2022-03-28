@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <main class="product-container device-widths">
+  <main class="product-container">
     <img
       class="screenshot"
       src="@/assets/img/illustration-app.png"
@@ -78,36 +78,34 @@ export default {
 
 <style lang="scss">
 .product-container {
-  // modbile
   min-height: 63rem;
-  width: 100% !important;
+  // NOTE: cannot use .device-widths since block styling is different for this
+  //  section
+  width: 100%;
   position: relative;
 
   @include tablet-breakpoint {
     min-height: 52rem;
     margin: 2rem auto;
-    width: 90% !important;
+    width: 90%;
   }
 
   @include desktop-breakpoint {
-    width: 80% !important;
+    width: 80%;
     min-height: 54rem;
   }
 
   @include large-desktop-breakpoint {
-    width: 60% !important;
+    width: 60%;
   }
 }
 
 .screenshot {
-  //display: block;
   width: 12rem;
-  //inset: auto 0 auto 0;
   left: 0;
   right: 0;
   margin: 0 auto;
   position: absolute;
-  //position: relative;
   // set to positive value so that background colors are not overriden!
   z-index: 20; // stuck in the middle with you;)
 
@@ -142,8 +140,6 @@ export default {
 .middle-background-img {
   width: 70%;
   position: absolute;
-  //display: block;
-  //inset: auto 0 auto 0;
   left: 0;
   right: 0;
   margin: 0 auto;
