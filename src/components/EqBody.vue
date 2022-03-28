@@ -44,7 +44,7 @@ export default {
                 <img
                   class="button-icon"
                   src="@/assets/img/icon-apple.svg"
-                  alt="apple icon"
+                  alt="apple logo icon"
                 />
               </span>
               <span class="button-content button-text">iOS Download</span>
@@ -62,7 +62,7 @@ export default {
                 <img
                   class="button-icon"
                   src="@/assets/img/icon-android.svg"
-                  alt="apple icon"
+                  alt="android logo icon"
                 />
               </span>
               <span class="button-content button-text">Android Download</span>
