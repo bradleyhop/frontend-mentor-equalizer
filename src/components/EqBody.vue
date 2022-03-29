@@ -155,8 +155,14 @@ export default {
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    top: 14rem;
+    top: 11rem;
     right: 9.3rem;
+  }
+
+  @include large-desktop-breakpoint {
+    width: 17rem;
+    right: 16rem;
+    top: 16rem;
   }
 }
 
