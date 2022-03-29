@@ -91,7 +91,7 @@ export default {
   }
 
   @include desktop-breakpoint {
-    width: 80%;
+    width: 85%;
     min-height: 54rem;
   }
 

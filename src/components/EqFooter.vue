@@ -87,13 +87,14 @@ export default {
   @include desktop-breakpoint {
     display: flex;
     flex-direction: row;
-    margin: 8rem auto;
+    margin: 4rem auto;
   }
 }
 .bottom-logo-container {
   @include desktop-breakpoint {
     width: 40%;
     display: flex;
+    align-self: start;
   }
 }
 
