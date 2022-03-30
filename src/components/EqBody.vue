@@ -93,6 +93,7 @@ export default {
   @include desktop-breakpoint {
     width: 80%;
     min-height: 57.5rem;
+    margin-bottom: 5.5rem;
   }
 
   @include large-desktop-breakpoint {
@@ -155,7 +156,7 @@ export default {
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    top: 14rem;
+    top: 13rem;
     right: 11rem;
   }
 
@@ -273,6 +274,6 @@ export default {
 }
 
 .android-mb {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 </style>
