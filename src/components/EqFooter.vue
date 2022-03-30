@@ -135,6 +135,7 @@ export default {
 
   @include desktop-breakpoint {
     margin: 0;
+    width: 50%;
   }
 }
 

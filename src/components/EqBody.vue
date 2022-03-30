@@ -85,14 +85,14 @@ export default {
   position: relative;
 
   @include tablet-breakpoint {
-    min-height: 51.7rem;
+    min-height: 53rem;
     margin: 2rem auto;
     width: 90%;
   }
 
   @include desktop-breakpoint {
-    width: 80%;
-    min-height: 57.5rem;
+    width: 75%;
+    min-height: 59rem;
     margin-bottom: 5.5rem;
   }
 
@@ -156,7 +156,7 @@ export default {
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    top: 13rem;
+    top: 11.5rem;
     right: 11rem;
   }
 
@@ -197,7 +197,7 @@ export default {
 }
 
 .action-heading {
-  margin: 3rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
 
   @include tablet-breakpoint {
     font-size: 40px;
@@ -219,7 +219,7 @@ export default {
   height: 3.25rem;
   display: inline-flex;
   align-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .four-dollar {

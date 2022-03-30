@@ -36,13 +36,13 @@ export default {
 
   @include tablet-breakpoint {
     background-image: url("@/assets/img/bg-pattern-1.svg");
-    background-position: 35rem -2rem;
+    background-position: 107% -2rem;
     background-size: 17rem auto;
   }
 
   @include desktop-breakpoint {
     background-position: right -2rem;
-    background-size: 18.5rem auto;
+    background-size: 19rem auto;
   }
 }
 
@@ -75,6 +75,7 @@ export default {
 
   @include tablet-breakpoint {
     width: 28rem;
+    margin-bottom: 2rem;
   }
 
   @include desktop-breakpoint {
