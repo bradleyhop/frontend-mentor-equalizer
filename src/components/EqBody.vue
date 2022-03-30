@@ -85,14 +85,14 @@ export default {
   position: relative;
 
   @include tablet-breakpoint {
-    min-height: 52rem;
+    min-height: 51.7rem;
     margin: 2rem auto;
     width: 90%;
   }
 
   @include desktop-breakpoint {
-    width: 85%;
-    min-height: 54rem;
+    width: 80%;
+    min-height: 57.5rem;
   }
 
   @include large-desktop-breakpoint {
@@ -129,7 +129,7 @@ export default {
   top: 8rem;
 
   @include tablet-breakpoint {
-    min-height: 34rem;
+    min-height: 37.5rem;
   }
 
   @include desktop-breakpoint {
@@ -155,8 +155,8 @@ export default {
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    top: 11rem;
-    right: 9.3rem;
+    top: 14rem;
+    right: 11rem;
   }
 
   @include large-desktop-breakpoint {
@@ -171,6 +171,7 @@ export default {
   background: $orangish;
   position: absolute;
   bottom: 0;
+  width: 100%;
   // set to positive value so that background colors are not overriden!
   z-index: 50; // on top of everything else
 
@@ -186,8 +187,12 @@ export default {
 }
 
 .action-copy-container {
-  display: inline-block;
-  margin: 0 2rem;
+  width: $button-width;
+  margin: auto;
+
+  @include desktop-breakpoint {
+    width: $desktop-button-width;
+  }
 }
 
 .action-heading {

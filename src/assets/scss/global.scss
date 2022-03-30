@@ -32,7 +32,7 @@
   margin: auto;
 
   @include desktop-breakpoint {
-    width: 85%;
+    width: 80%;
   }
 
   @include large-desktop-breakpoint {
@@ -135,10 +135,13 @@ $blackish: hsl(244, 23%, 12%);
 }
 
 // buttons
+$button-width: 18.5rem;
+$desktop-button-width: 20.8rem;
+
 // attributes of all buttons
 .button-skel {
-  width: 296px;
-  height: 61px;
+  width: $button-width;
+  height: 3.8rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -154,7 +157,7 @@ $blackish: hsl(244, 23%, 12%);
 
   // tablet and mobile use same size buttons; bigger for desktop
   @include desktop-breakpoint {
-    width: 333px;
+    width: $desktop-button-width;
   }
 }
 

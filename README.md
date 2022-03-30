@@ -1,7 +1,9 @@
 # Frontend Mentor - Equalizer landing page solution
 
 This is a solution to the [Equalizer landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE).
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+Frontend Mentor challenges help you improve your coding skills by building
+realistic projects. In this case, I've been provided with a Figma design file in
+aiding the building of this project.
 
 ## Table of contents
 
@@ -45,7 +47,7 @@ Users should be able to:
 - Mobile-first workflow
 - [Vue 3](https://vuejs.org/) - JS library
 - [Vite](https://vitejs.dev/) - Vite Frontend Tooling
-- [SCSS](https://sass-lang.com/) - For styles
+- [SCSS](https://sass-lang.com/) - For styling
 
 ### What I learned
 
@@ -80,10 +82,10 @@ through Frontend Mentor and their design files.
 
   - how to build from mobile-first design
   - using min-height instead of height CSS attribute, if a height needs to be
-      set at all, to prevent overflow
+    set at all, to prevent overflow
   - tips on building a site from a design file
   - the differences and importance in ch, em, and rem and to generally avoid
-      setting px for lengths
+    setting px for lengths
 
 - [Figma File to Code. The Designer to Developer Handoff w/ Frontend Mentor Founder HTML+CSS Tutorial](https://www.youtube.com/watch?v=PY_iIeAKFw0) - An amazing first part video series that helped me mentally wrap my mind around on how to approach this project and how to roughly plan the code structure before even opening the text editor. Unfortunately, the second and third parts are behind paywalls.
 
