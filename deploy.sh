@@ -5,7 +5,7 @@ npm run build
 cd dist
 # add screenshot of site for Open Graph cards
 cp ../src/assets/img/screenshot.png ./assets/screenshot.png
-echo "screenshot copied!!"
+echo "~~screenshot copied!!~~"
 wait
 
 git init

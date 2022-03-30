@@ -92,7 +92,7 @@ export default {
 
   @include desktop-breakpoint {
     width: 75%;
-    min-height: 59rem;
+    min-height: 58rem;
     margin-bottom: 5.5rem;
   }
 
@@ -134,7 +134,7 @@ export default {
   }
 
   @include desktop-breakpoint {
-    top: 14rem;
+    top: 13rem;
   }
 }
 
@@ -156,7 +156,7 @@ export default {
 
   @include desktop-breakpoint {
     width: 19.5rem;
-    top: 11.5rem;
+    top: 11rem;
     right: 11rem;
   }
 
