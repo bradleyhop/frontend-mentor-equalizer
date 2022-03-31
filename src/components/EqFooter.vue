@@ -77,6 +77,27 @@ export default {
       </div>
       <!-- .footer-wrapper -->
     </div>
+
+    <div class="attributes">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE"
+          target="_blank"
+          class="project-link"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >
+        - Coded by
+        <a
+          href="https://github.com/bradleyhop/frontend-mentor-equalizer"
+          target="_blank"
+          class="project-link"
+          rel="noopener noreferrer"
+          >Bradley Smith</a
+        >
+      </p>
+    </div>
   </footer>
 </template>
 
@@ -182,6 +203,22 @@ export default {
     // https://stackoverflow.com/questions/24933430/img-src-svg-changing-the-styles-with-css
     filter: invert(78%) sepia(62%) saturate(5416%) hue-rotate(327deg)
       brightness(101%) contrast(96%);
+  }
+}
+
+.attributes {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+.project-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: $blackish;
+
+  &:hover {
+    color: $orangish;
   }
 }
 </style>
